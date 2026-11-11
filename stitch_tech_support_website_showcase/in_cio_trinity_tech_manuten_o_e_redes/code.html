@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-high":"#dce9ff","on-error":"#ffffff","on-tertiary-container":"#00a84c","on-primary-container":"#7793ba","surface":"#f8f9ff","surface-container-low":"#eff4ff","surface-dim":"#cbdbf5","outline-variant":"#c3c6cf","inverse-surface":"#213145","outline":"#73777f","on-primary-fixed":"#001c38","surface-variant":"#d3e4fe","on-error-container":"#93000a","on-secondary-fixed-variant":"#004c6b","on-surface-variant":"#43474e","secondary-fixed":"#c6e7ff","on-secondary-fixed":"#001e2d","error-container":"#ffdad6","secondary":"#00658d","surface-bright":"#f8f9ff","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#005322","primary-fixed":"#d3e4ff","secondary-fixed-dim":"#81cfff","on-background":"#0b1c30","surface-tint":"#446084","surface-container-highest":"#d3e4fe","primary-container":"#082b4c","on-secondary-container":"#004b69","on-primary-fixed-variant":"#2b486b","tertiary-fixed":"#66ff8e","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","inverse-primary":"#acc9f2","error":"#ba1a1a","secondary-container":"#41befd","tertiary-container":"#003212","on-primary":"#ffffff","primary":"#00162e","on-tertiary-fixed":"#002109","inverse-on-surface":"#eaf1ff","on-surface":"#0b1c30","tertiary":"#001b07","surface-container":"#e5eeff","primary-fixed-dim":"#acc9f2","background":"#f8f9ff","tertiary-fixed-dim":"#3de273"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-2xl":"4rem","margin":"3rem","gutter-mobile":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","margin-mobile":"1.25rem","space-md":"1rem"},"fontFamily":{"display-hero-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"],"caption":["Inter"],"label-sm":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-sm":["Inter"],"headline-xl-mobile":["Space Grotesk"],"headline-lg":["Space Grotesk"],"headline-xl":["Space Grotesk"],"label-md":["Space Grotesk"],"display-hero":["Space Grotesk"],"body-md":["Inter"],"body-lg":["Inter"]},"fontSize":{"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"600"}],"caption":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(8,43,76,0.06)]"><div class="bg-primary-container text-on-primary text-caption font-caption py-1.5 px-6 lg:px-12"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4"><span>Horário: Seg - Sex: 08:30 às 18:30 | Sáb: 09:00 às 13:00</span><div class="flex items-center gap-6"><span>Suporte Corporativo: (11) 3420-9900</span><span>WhatsApp Emergencial: (11) 98765-4321</span><span class="bg-secondary/30 text-secondary-fixed px-2 py-0.5 rounded-lg">Atendimento Técnico Autorizado</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-container text-secondary-container flex items-center justify-center font-headline-md font-bold"><span class="material-symbols-outlined text-2xl">memory</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary font-bold">Trinity Tech</span><span class="font-caption text-caption text-secondary uppercase font-semibold">Engenharia &amp; TI</span></div></div><nav class="hidden xl:flex items-center gap-2" data-active-classes="bg-surface-container-high text-primary font-bold rounded-lg"><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface text-label-md font-label-md transition-colors" data-path="inicio" href="#">Início</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface text-label-md font-label-md transition-colors" data-path="servicos" href="#">Serviços</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface text-label-md font-label-md transition-colors" data-path="manutencao-limpeza" href="#">Manutenção &amp; Limpeza</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface text-label-md font-label-md transition-colors" data-path="redes-wifi" href="#">Redes &amp; Wi-Fi</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface text-label-md font-label-md transition-colors" data-path="planos-ti" href="#">Planos TI</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface text-label-md font-label-md transition-colors" data-path="depoimentos" href="#">Depoimentos</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface text-label-md font-label-md transition-colors" data-path="contato-orcamento-rapido" href="#">Contato</a></nav><div class="flex items-center gap-4"><a class="hidden sm:inline-flex items-center gap-2 bg-primary-container hover:bg-primary text-on-primary px-5 py-2.5 rounded-lg font-label-md text-label-md transition-all shadow-[0_2px_8px_rgba(8,43,76,0.12)]" data-path="contato-orcamento-rapido" href="#"><span class="material-symbols-outlined text-lg text-secondary-container">build</span><span>Pedir Orçamento Grátis</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAMTdul3hImi9ec35UT9q5JluUhiMMkbV0hxBzNQHmCuNi9r8y-6VQonnkMZ3sxSvAFQM2pGYFxgxIO-TFFmAjvWbxK7nXkC6EEMHaRW8p35--dCPmzWiDDbQybcoml2QS11_wyMP3lME5COvhaUHeAZGybpAY0MKXq3APBL_euIPN0C4n4AR8DpNdRKWtH4w7ps95xacOmeAPw-uwcobiTL6K3xU2CbxTQaPt0XCbZ56QyHdAynKvLKXpq"/></div></div></header><main class="w-full pt-28 bg-surface min-h-[calc(100vh-28rem)]"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-primary-container text-on-primary py-20 lg:py-28">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="64" id="circuit-pattern" patternunits="userSpaceOnUse" width="64">
+<path d="M16 0v16h16v16h32M0 48h32v16" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+<circle cx="16" cy="16" fill="currentColor" r="3"></circle>
+<circle cx="32" cy="32" fill="currentColor" r="3"></circle>
+<circle cx="48" cy="16" fill="currentColor" r="2"></circle>
+<circle cx="32" cy="48" fill="currentColor" r="2.5"></circle>
+</pattern>
+</defs>
+<rect fill="url(#circuit-pattern)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Glowing Orbs (Trinity Nodes aesthetic) -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-secondary/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container/20 text-secondary-fixed">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Laboratório Especializado Trinity Tech</span>
+</div>
+<h1 class="font-display-hero text-headline-xl lg:text-display-hero font-bold tracking-tight text-on-primary">
+          Especialistas em <span class="text-secondary-container">Manutenção</span>, Limpeza e Performance para seu Setup.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl leading-relaxed">
+          Atendimento corporativo e residencial. Limpeza preventiva de alta precisão, montagem gamer profissional, infraestrutura Wi-Fi de alta densidade e suporte TI com agilidade e transparência total.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-3 px-6 py-4 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-label-md text-label-md uppercase tracking-wider shadow-lg transition-transform hover:-translate-y-0.5" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20meu%20computador." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-2xl">chat</span>
+<span>Solicitar Orçamento via WhatsApp</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-surface-container-high/15 hover:bg-surface-container-high/25 text-on-primary font-label-md text-label-md uppercase tracking-wider transition-all" href="#servicos">
+<span>Ver Serviços</span>
+<span class="material-symbols-outlined text-xl">arrow_downward</span>
+</a>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6">
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-highest/10 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-container text-xl">bolt</span>
+<span class="font-caption text-caption text-on-primary font-medium">Atendimento Rápido</span>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-highest/10 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-container text-xl">verified_user</span>
+<span class="font-caption text-caption text-on-primary font-medium">Técnicos Certificados</span>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-highest/10 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-container text-xl">verified</span>
+<span class="font-caption text-caption text-on-primary font-medium">Garantia 90 Dias</span>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-highest/10 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-container text-xl">science</span>
+<span class="font-caption text-caption text-on-primary font-medium">Pastas Térmicas Top Tier</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Card with Laboratory Metric -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden bg-surface shadow-2xl p-2">
+<img class="w-full h-80 object-cover rounded-xl" data-alt="Close-up of a certified computer technician in an ESD antistatic wristband applying high grade thermal paste onto a clean modern CPU on a motherboard with surgical precision inside a clean modern technical workshop with blue neon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQqRBIwj2QlIaE-RP4vUBWM4CWrFLgmlJQ9nV2V_7Ie0OdQXAP9k6kNV_Ac2eYxtQvxudAcjHdaSsSNvNAXLdLWWxNvO_DnhBAQ9JW1I5dl-Is0mcrZniAWHnOinb3CStuqZTCeaVD-Oz3XEg6OVlLCQ0iaz2nP1LTwH4BCBEDYLY_6uqzauoZOptqtCK8PqFCKjy2hCDhFfcwur6L0e__ckXhUB0q-4KBYNVnNTMy"/>
+<div class="p-5 space-y-4">
+<div class="flex items-center justify-between pb-3 bg-surface-container-low p-3 rounded-lg">
+<div>
+<p class="font-caption text-caption text-on-surface-variant uppercase font-semibold">Desempenho Térmico</p>
+<p class="font-headline-sm text-headline-sm text-primary font-bold">Redução de até 22°C</p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">device_thermostat</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="bg-surface-container p-2.5 rounded-lg">
+<p class="font-headline-sm text-headline-sm text-primary font-bold">+1.500</p>
+<p class="font-caption text-caption text-on-surface-variant">Máquinas Salvas</p>
+</div>
+<div class="bg-surface-container p-2.5 rounded-lg">
+<p class="font-headline-sm text-headline-sm text-secondary font-bold">99.4%</p>
+<p class="font-caption text-caption text-on-surface-variant">Aprovação</p>
+</div>
+<div class="bg-surface-container p-2.5 rounded-lg">
+<p class="font-headline-sm text-headline-sm text-primary font-bold">Same-Day</p>
+<p class="font-caption text-caption text-on-surface-variant">Triagem Ágil</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVIÇOS PRINCIPAIS -->
+<section class="py-20 bg-surface" id="servicos">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-3 max-w-2xl">
+<div class="inline-flex items-center gap-2 text-secondary font-label-md text-label-md uppercase tracking-wider">
+<span class="material-symbols-outlined text-lg">settings_suggest</span>
+<span>Soluções Cirúrgicas em Hardware &amp; TI</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">
+            Serviços de Manutenção &amp; Infraestrutura
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Desde a revitalização térmica de notebooks compactos até instalações completas de redes estruturadas para ambientes corporativos.
+          </p>
+</div>
+<div class="hidden md:flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Padrão Técnico Certificado</span>
+</div>
+</div>
+<!-- Bento Grid for Services -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Serviço 1: Limpeza Preventiva -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-3xl">air</span>
+</div>
+<div class="inline-block px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm uppercase">
+              Alta Procura
+            </div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+              Limpeza Preventiva &amp; Troca de Pasta Térmica
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Desoxidação de placas, despoeiramento ultrassônico, substituição de thermal pads ressecados e aplicação de compostos térmicos de alta condutividade (Thermal Grizzly / Arctic Silver).
+            </p>
+<ul class="space-y-2 font-caption text-caption text-on-surface pt-2">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Diminuição drástica de ruído de ventoinhas</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Prevenção de queima do chip gráfico e CPU</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Limpeza interna química anti-estática</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-6 bg-surface-container-low -mx-8 -mb-8 p-6 rounded-b-2xl flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Notebooks &amp; PCs</span>
+<a class="inline-flex items-center gap-1 text-secondary font-label-md text-label-md hover:underline" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20Limpeza%20Preventiva%20para%20meu%20equipamento.">
+<span>Orçar Agora</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Serviço 2: Manutenção Computadores & Notebooks -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-3xl">laptop_mac</span>
+</div>
+<div class="inline-block px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase">
+              Reparo &amp; Upgrade
+            </div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+              Manutenção &amp; Upgrades Especializados
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Diagnóstico preciso de falhas em placas-mãe, troca de telas quebradas, teclados, dobradiças, clonagem e migração de sistema para SSDs NVMe ultrarrápidos.
+            </p>
+<ul class="space-y-2 font-caption text-caption text-on-surface pt-2">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Inicialização até 10x mais veloz com NVMe</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Substituição de carcaças e conectores Jack DC</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Recuperação de dados e backup seguro</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-6 bg-surface-container-low -mx-8 -mb-8 p-6 rounded-b-2xl flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Peças com Garantia</span>
+<a class="inline-flex items-center gap-1 text-secondary font-label-md text-label-md hover:underline" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20preciso%20de%20manuten%C3%A7%C3%A3o%20e%20upgrade%20no%20meu%20computador.">
+<span>Orçar Agora</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Serviço 3: Redes & Wi-Fi -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-3xl">router</span>
+</div>
+<div class="inline-block px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase">
+              Conectividade
+            </div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+              Configuração de Redes &amp; Wi-Fi Mesh
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Elimine zonas mortas e quedas de sinal. Implementação de cabeamento de alta performance Cat6/Cat6a, roteadores Mesh corporativos, balanceamento e segurança.
+            </p>
+<ul class="space-y-2 font-caption text-caption text-on-surface pt-2">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Cobertura contínua sem troca manual de rede</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Configuração de VLANs e isolamento para visitantes</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Certificação e identificação de cabeamento</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-6 bg-surface-container-low -mx-8 -mb-8 p-6 rounded-b-2xl flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Empresas e Residências</span>
+<a class="inline-flex items-center gap-1 text-secondary font-label-md text-label-md hover:underline" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20preciso%20melhorar%20a%20rede%20Wi-Fi%20da%20minha%20casa%20ou%20empresa.">
+<span>Orçar Agora</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Serviço 4: PC Gamer & Workstations -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-3xl">sports_esports</span>
+</div>
+<div class="inline-block px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm uppercase">
+              Alta Performance
+            </div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+              Montagem Gamer &amp; Workstations
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Montagem milimétrica com cable management cirúrgico, ajuste de curva de fans para baixo ruído, ativação de perfil XMP/EXPO e testes de estabilidade sob estresse.
+            </p>
+<ul class="space-y-2 font-caption text-caption text-on-surface pt-2">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Otimização para renderização 3D e streaming</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Instalação de Water Coolers e fluxo de ar calibrado</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Benchmark detalhado de GPU e processador</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-6 bg-surface-container-low -mx-8 -mb-8 p-6 rounded-b-2xl flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Setup Personalizado</span>
+<a class="inline-flex items-center gap-1 text-secondary font-label-md text-label-md hover:underline" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20quero%20montar%20ou%20otimizar%20meu%20PC%20Gamer.">
+<span>Orçar Agora</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Serviço 5: Suporte TI & Contratos Empresariais -->
+<div class="md:col-span-2 bg-gradient-to-r from-primary-container to-primary text-on-primary p-8 rounded-2xl shadow-xl flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/20 flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-3xl">domain</span>
+</div>
+<span class="px-3.5 py-1.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm uppercase font-bold">
+                Corporativo / SLA Garantido
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold">
+              Gestão Completa de TI &amp; Planos de Manutenção Empresarial
+            </h3>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed max-w-3xl">
+              Deixe a infraestrutura de TI do seu escritório aos cuidados da Trinity Tech. Rotinas automatizadas de backup em nuvem, manutenção programada em todas as máquinas, suporte remoto imediato e chamados presenciais ilimitados.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+<div class="flex items-start gap-3 bg-surface-container-highest/10 p-3 rounded-xl">
+<span class="material-symbols-outlined text-secondary-container text-xl mt-0.5">cloud_sync</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-primary">Backups &amp; Segurança LGPD</h4>
+<p class="font-caption text-caption text-on-primary-container">Prevenção contra sequestro de dados (Ransomware) e falhas críticas.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-container-highest/10 p-3 rounded-xl">
+<span class="material-symbols-outlined text-secondary-container text-xl mt-0.5">support_agent</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-primary">Helpdesk Rápido</h4>
+<p class="font-caption text-caption text-on-primary-container">Atendimento a colaboradores sem paralisação das atividades da empresa.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-6 mt-6 flex flex-wrap items-center justify-between gap-4">
+<span class="font-body-sm text-body-sm text-on-primary-container">Planos flexíveis sob medida para 5 até 100+ estações de trabalho.</span>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-secondary-container text-primary font-label-md text-label-md font-bold uppercase hover:bg-white transition-colors" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20gostaria%20de%20um%20plano%20de%20suporte%20de%20TI%20para%20minha%20empresa.">
+<span>Falar com Consultor Corporativo</span>
+<span class="material-symbols-outlined text-lg">corporate_fare</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- DIAGNÓSTICO INTERATIVO / SINTOMAS FREQUENTES -->
+<section class="py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-12">
+<div class="text-center max-w-3xl mx-auto space-y-3">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase font-semibold">
+          Auto-Diagnóstico Trinity
+        </span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">
+          Identifique o Sintoma do seu Equipamento
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Veja com exatidão qual o procedimento técnico recomendado para devolver estabilidade e velocidade à sua máquina.
+        </p>
+</div>
+<!-- Comparison Matrix / Diagnostic Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Sintoma 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-base">warning</span> Sintoma Comum
+              </span>
+<span class="text-caption font-caption text-outline">Diagnóstico #01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+              PC lento, travando ao abrir programas ou demorando minutos para ligar?
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Na grande maioria dos casos o culpado é um Disco Rígido (HD mecânico) em fim de vida útil ou gargalos no carregamento de serviços do sistema operacional.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-high/40 p-4 rounded-xl flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl">speed</span>
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Solução Trinity</p>
+<p class="font-body-sm text-body-sm font-semibold text-primary">Upgrade para SSD NVMe + Otimização de Inicialização</p>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-primary-container text-on-primary hover:bg-secondary transition-colors" href="https://wa.me/5511987654321?text=Meu%20PC%20est%C3%A1%20muito%20lento%20e%20travando.%20Quero%20um%20upgrade." title="Orçar">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Sintoma 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-base">thermostat</span> Sintoma Crítico
+              </span>
+<span class="text-caption font-caption text-outline">Diagnóstico #02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+              Superaquecimento, ventoinhas disparadas ou desligando em jogos e render?
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Pasta térmica ressecada formando camada isolante, aletas do dissipador entupidas de pó e thermal pads degradados que não conduzem o calor.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-high/40 p-4 rounded-xl flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl">ac_unit</span>
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Solução Trinity</p>
+<p class="font-body-sm text-body-sm font-semibold text-primary">Limpeza Profunda + Pasta Térmica Premium de Alta Condutividade</p>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-primary-container text-on-primary hover:bg-secondary transition-colors" href="https://wa.me/5511987654321?text=Meu%20notebook%2FPC%20est%C3%A1%20esquentando%20muito%20e%20desligando." title="Orçar">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Sintoma 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-base">wifi_off</span> Sinal Fraco
+              </span>
+<span class="text-caption font-caption text-outline">Diagnóstico #03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+              Wi-Fi caindo constantemente em reuniões ou sem sinal em cômodos?
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Roteador padrão da operadora mal posicionado, interferência de canais em 2.4GHz e saturação de conexões simultâneas sem balanceamento inteligente.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-high/40 p-4 rounded-xl flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl">cell_tower</span>
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Solução Trinity</p>
+<p class="font-body-sm text-body-sm font-semibold text-primary">Rede Mesh Wi-Fi 6 de Roaming Rápido + Cabeamento Estruturado</p>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-primary-container text-on-primary hover:bg-secondary transition-colors" href="https://wa.me/5511987654321?text=Gostaria%20de%20solu%C3%A7%C3%A3o%20para%20quedas%20de%20Wi-Fi%20na%20minha%20casa%20ou%20empresa." title="Orçar">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Sintoma 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-base">bug_report</span> Falha Grave
+              </span>
+<span class="text-caption font-caption text-outline">Diagnóstico #04</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+              Telas azuis súbitas (BSOD), vírus, travamento de navegadores ou anúncios?
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Drivers corrompidos, infecções por malware oculto minerando em segundo plano ou setores defeituosos na memória RAM.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-high/40 p-4 rounded-xl flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl">security</span>
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Solução Trinity</p>
+<p class="font-body-sm text-body-sm font-semibold text-primary">Varredura de Segurança + Formatação Limpa + Backup Criptografado</p>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-primary-container text-on-primary hover:bg-secondary transition-colors" href="https://wa.me/5511987654321?text=Meu%20computador%20est%C3%A1%20com%20v%C3%ADrus%20ou%20tela%20azul." title="Orçar">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PASSO A PASSO / TRANSPARÊNCIA CIRÚRGICA -->
+<section class="py-20 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-16">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
+<div class="space-y-3">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-wider font-semibold">
+            Processo Transparente
+          </span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">
+            Como Funciona o Atendimento Trinity Tech
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Sem surpresas no orçamento. Cada etapa é registrada e validada com você pelo WhatsApp com fotos e laudos de teste.
+          </p>
+</div>
+<div class="flex items-center gap-2 p-3 bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-secondary text-xl">verified</span>
+<span class="font-caption text-caption text-on-surface font-semibold">Garantia Formal de Serviço Emitida</span>
+</div>
+</div>
+<!-- 5 Steps Flow -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl relative shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-secondary-container flex items-center justify-center font-headline-sm font-bold mb-4">
+            01
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">Triagem Rápida</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Você nos relata a falha pelo WhatsApp ou formulário. Fazemos a triagem prévia e agendamos a entrega ou coleta.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl relative shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-secondary-container flex items-center justify-center font-headline-sm font-bold mb-4">
+            02
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">Entrada &amp; Registro</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Recepção do hardware em bancada com termo formal de entrada, inspeção física e fotos do estado inicial.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl relative shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-secondary-container flex items-center justify-center font-headline-sm font-bold mb-4">
+            03
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">Laudo &amp; Orçamento</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Diagnóstico cirúrgico em até 24h. Enviamos a proposta clara de peças e mão-de-obra. Você só aprova se concordar.
+          </p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl relative shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-secondary-container flex items-center justify-center font-headline-sm font-bold mb-4">
+            04
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">Execução &amp; Estresse</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Realização do procedimento técnico com peças homologadas e baterias rigorosas de benchmarks e estresse térmico.
+          </p>
+</div>
+<!-- Step 5 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl relative shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary flex items-center justify-center font-headline-sm font-bold mb-4">
+            05
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">Entrega &amp; Garantia</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Devolução da máquina limpa e higienizada com laudo de teste final e certificado de garantia de 90 a 180 dias.
+          </p>
+</div>
+</div>
+<!-- Workshop Highlight Photo Banner -->
+<div class="rounded-3xl overflow-hidden relative shadow-lg bg-primary-container">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+<div class="lg:col-span-7 p-8 lg:p-12 space-y-4 text-on-primary">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary-container font-label-sm text-label-sm uppercase">
+              Bancada Técnica Anti-Estática (ESD)
+            </span>
+<h3 class="font-headline-lg text-headline-lg font-bold">
+              Seu hardware tratado com padrão laboratorial de engenharia.
+            </h3>
+<p class="font-body-md text-body-md text-on-primary-container">
+              Trabalhamos com pulseiras e mantas dissipativas de estática, sopradores ionizados e pastas térmicas testadas mundialmente. Não fazemos improvisos: cada parafuso volta para seu lugar de origem.
+            </p>
+<div class="pt-2 flex items-center gap-6">
+<div>
+<p class="font-headline-md text-headline-md text-secondary-container font-bold">0%</p>
+<p class="font-caption text-caption text-on-primary-container">Risco Estático</p>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-secondary-container font-bold">100%</p>
+<p class="font-caption text-caption text-on-primary-container">Privacidade LGPD</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 h-64 lg:h-full min-h-[280px]">
+<img class="w-full h-full object-cover" data-alt="Tidy and sterile clean electronics workstation with soldering microscope, antistatic mat, thermal paste tubes, screwdrivers organized in racks, clean blue led ambient lighting and computer parts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyhSRwMx2kQYqyT9x4ubs7xwzMZknHOdRb8qOuKkhQlJOGW3xSKptmJyuBAQToOtNX-fCSQNXH2eSDKiuA1E4Mjf0UQDt_JM-a7j5JHG81Zj26lOTrWKYGglo9i7-eK1XKGNyN1Ah24ZlvpWeCbZhwCpt1z8QsX69vpCkGt0FzQm3j3Db40lHjHi-_Ad4mshzHmoqfdg0y_bq3IPi-cFsPbzfdjE2azQzdoxxSQIfp"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- DEPOIMENTOS DE CLIENTES -->
+<section class="py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-12">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
+<div class="space-y-3">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-wider font-semibold">
+            Confiança Comprovada
+          </span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">
+            O que dizem os clientes Trinity Tech
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Depoimentos de quem confiou suas máquinas de trabalho e jogos aos nossos especialistas.
+          </p>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest px-4 py-2 rounded-xl shadow-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">4.9 / 5.0</span>
+<span class="font-caption text-caption text-on-surface-variant">(Google Reviews)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Depoimento 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between space-y-6">
+<div class="space-y-4">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              "Meu notebook Gamer (Acer Predator) estava batendo 94°C e travando no meio das partidas. Levei na Trinity, fizeram a preventiva com troca de thermal pads e pasta Grizzly. A temperatura caiu para 71°C no talo! Atendimento impecável."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t-0 bg-surface-container-high/30 -mx-6 -mb-6 p-4 rounded-b-2xl">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-container flex items-center justify-center font-bold">
+              RA
+            </div>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Rodrigo Alencar</p>
+<p class="font-caption text-caption text-on-surface-variant">Designer 3D &amp; Gamer</p>
+</div>
+</div>
+</div>
+<!-- Depoimento 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between space-y-6">
+<div class="space-y-4">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              "Contratamos a Trinity para reestruturar a rede Wi-Fi da nossa agência com 28 computadores. Eles instalaram roteadores Mesh e organizaram nosso rack. Acabaram as quedas de internet e as chamadas no Meet agora voam. Recomendo de olhos fechados."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 bg-surface-container-high/30 -mx-6 -mb-6 p-4 rounded-b-2xl">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">
+              MS
+            </div>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Mariana Silveira</p>
+<p class="font-caption text-caption text-on-surface-variant">Diretora de Operações, Agência Pulse</p>
+</div>
+</div>
+</div>
+<!-- Depoimento 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between space-y-6">
+<div class="space-y-4">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              "Meu Dell corporativo não ligava mais após queda de energia. Outra assistência condenou a placa toda por R$ 3.000. Na Trinity fizeram o reparo em nível de componente por menos de um terço do valor, e meus dados ficaram 100% seguros!"
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 bg-surface-container-high/30 -mx-6 -mb-6 p-4 rounded-b-2xl">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-container flex items-center justify-center font-bold">
+              CM
+            </div>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Carlos Mendes</p>
+<p class="font-caption text-caption text-on-surface-variant">Advogado Tributarista</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FORMULÁRIO DE ORÇAMENTO RÁPIDO & CTA CONVERSÃO -->
+<section class="py-20 bg-surface" id="contato-orcamento-rapido">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="bg-primary-container text-on-primary rounded-3xl p-8 lg:p-14 shadow-2xl relative overflow-hidden">
+<!-- Trinity Circuit Decors -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 items-center">
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary-container font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-base">send</span> Resposta em até 15 Minutos
+            </div>
+<h2 class="font-headline-xl text-headline-xl font-bold tracking-tight">
+              Solicite seu Orçamento Gratuito &amp; Sem Compromisso
+            </h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+              Preencha os dados do seu computador ou rede. Nossos especialistas farão uma triagem técnica imediata e retornarão com as opções mais eficientes de reparo.
+            </p>
+<div class="space-y-3 pt-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container">shield</span>
+<span class="font-body-sm text-body-sm text-on-primary">Sigilo absoluto e integridade de dados garantidos pela LGPD.</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container">schedule</span>
+<span class="font-body-sm text-body-sm text-on-primary">Horário de atendimento imediato em horário comercial.</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container">local_shipping</span>
+<span class="font-body-sm text-body-sm text-on-primary">Opção de coleta e entrega expressa via portador (consulte região).</span>
+</div>
+</div>
+<!-- Botão WhatsApp Gigante Alternativo -->
+<div class="pt-4">
+<p class="font-caption text-caption text-on-primary-container mb-2 uppercase tracking-wider font-semibold">Prefere falar agora direto no WhatsApp?</p>
+<a class="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-label-md text-label-md font-bold uppercase transition-transform hover:-translate-y-0.5 shadow-md" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20r%C3%A1pido%20para%20manuten%C3%A7%C3%A3o." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-2xl">chat</span>
+<span>Chamar no WhatsApp Oficial (11) 98765-4321</span>
+</a>
+</div>
+</div>
+<!-- Formulário -->
+<div class="lg:col-span-6 bg-surface text-on-surface p-8 rounded-2xl shadow-xl">
+<form class="space-y-4" id="orcamento-form" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden'); this.reset();">
+<div>
+<label class="block font-label-md text-label-md text-primary font-semibold mb-1" for="nome">Seu Nome / Empresa</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container text-on-surface border-0 focus:ring-2 focus:ring-secondary outline-none font-body-sm text-body-sm transition-all" id="nome" placeholder="Ex: Felipe Santana ou Studio Digital" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-primary font-semibold mb-1" for="whatsapp">WhatsApp de Contato</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container text-on-surface border-0 focus:ring-2 focus:ring-secondary outline-none font-body-sm text-body-sm transition-all" id="whatsapp" placeholder="(11) 90000-0000" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary font-semibold mb-1" for="tipo">Tipo de Equipamento</label>
+<select class="w-full px-4 py-3 rounded-xl bg-surface-container text-on-surface border-0 focus:ring-2 focus:ring-secondary outline-none font-body-sm text-body-sm transition-all" id="tipo">
+<option value="notebook">Notebook (Comum ou Gamer)</option>
+<option value="desktop">PC Desktop / Gamer</option>
+<option value="macbook">MacBook / iMac</option>
+<option value="rede">Rede Wi-Fi / Cabeamento</option>
+<option value="empresa">Contrato para Empresa (TI)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary font-semibold mb-1" for="servico-desejado">Serviço de Maior Interesse</label>
+<select class="w-full px-4 py-3 rounded-xl bg-surface-container text-on-surface border-0 focus:ring-2 focus:ring-secondary outline-none font-body-sm text-body-sm transition-all" id="servico-desejado">
+<option value="limpeza">Limpeza Preventiva &amp; Pasta Térmica</option>
+<option value="reparo">Reparo / Não liga / Quebrou</option>
+<option value="ssd">Upgrade de SSD NVMe / Memória RAM</option>
+<option value="rede">Melhoria de Wi-Fi e Sinal</option>
+<option value="formatacao">Formatação, Vírus &amp; Backup</option>
+<option value="outro">Outro diagnóstico de bancada</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary font-semibold mb-1" for="descricao">Descreva o que está acontecendo</label>
+<textarea class="w-full px-4 py-3 rounded-xl bg-surface-container text-on-surface border-0 focus:ring-2 focus:ring-secondary outline-none font-body-sm text-body-sm transition-all" id="descricao" placeholder="Ex: Meu notebook esquenta muito quando abro programas de edição e às vezes reinicia..." rows="3"></textarea>
+</div>
+<button class="w-full py-4 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold transition-all shadow-md flex items-center justify-center gap-2" type="submit">
+<span>Receber Orçamento em até 15 min</span>
+<span class="material-symbols-outlined text-xl">send</span>
+</button>
+<div class="hidden p-3 rounded-lg bg-surface-container-high text-primary font-body-sm text-body-sm flex items-center gap-2" id="form-feedback">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Solicitação recebida com sucesso! Em instantes um técnico entrará em contato via WhatsApp.</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FLOATING QUICK-CONTACT DOCK (WhatsApp Flutuante) -->
+<aside class="fixed bottom-6 right-6 z-40 flex items-center gap-3">
+<a class="group flex items-center gap-3 px-4 py-3 rounded-full bg-[#25D366] text-white shadow-2xl hover:bg-[#20ba59] transition-all transform hover:scale-105" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Trinity%20Tech%20e%20gostaria%20de%20um%20or%C3%A7amento%20agora." rel="noopener noreferrer" target="_blank">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+</span>
+<span class="material-symbols-outlined text-2xl">chat</span>
+<span class="font-label-md text-label-md font-bold pr-1 hidden sm:inline">Orçamento Rápido</span>
+</a>
+</aside>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface py-16"><div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"><div class="space-y-4"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-xl bg-primary-container text-secondary-container flex items-center justify-center"><span class="material-symbols-outlined text-xl">memory</span></div><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary font-bold">Trinity Tech</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Assistência técnica de precisão cirúrgica para computadores, notebooks de alto desempenho, servidores e infraestrutura de redes corporativas.</p><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-high text-secondary text-caption font-caption"><span class="material-symbols-outlined text-sm">verified</span><span>Certificação ISO / Hardware Care</span></div></div><div class="space-y-3"><h4 class="font-headline-sm text-headline-sm text-primary">Links Rápidos</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-secondary transition-colors" data-path="servicos" href="#">Diagnóstico &amp; Reparo</a></li><li><a class="hover:text-secondary transition-colors" data-path="manutencao-limpeza" href="#">Preventiva Térmica &amp; Desoxidação</a></li><li><a class="hover:text-secondary transition-colors" data-path="redes-wifi" href="#">Cabeamento Estruturado e Roteadores</a></li><li><a class="hover:text-secondary transition-colors" data-path="planos-ti" href="#">Gestão de TI para Empresas</a></li><li><a class="hover:text-secondary transition-colors" data-path="depoimentos" href="#">Casos de Sucesso e Avaliações</a></li></ul></div><div class="space-y-3"><h4 class="font-headline-sm text-headline-sm text-primary">Canais de Atendimento</h4><div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg">call</span><span>(11) 3420-9900</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg">chat</span><span>WhatsApp: (11) 98765-4321</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg">mail</span><span>contato@trinitytech.com.br</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg">location_on</span><span>Av. Paulista, 1842 - 12º Andar - SP</span></div></div></div><div class="space-y-3"><h4 class="font-headline-sm text-headline-sm text-primary">Garantia &amp; Confiança</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Todas as intervenções possuem garantia de 90 a 180 dias com laudo digital e peças originais catalogadas.</p><div class="p-4 rounded-xl bg-surface-container-high/60 space-y-2"><div class="flex items-center gap-2 text-secondary font-label-md text-label-md"><span class="material-symbols-outlined text-base">security</span><span>Termo de Sigilo de Dados (LGPD)</span></div><p class="font-caption text-caption text-on-surface-variant">Seus dados permanecem intactos e criptografados durante os diagnósticos de bancada.</p></div></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 mt-12 pt-6 text-center font-caption text-caption text-on-surface-variant"><p>© 2024 Trinity Tech Soluções em TI. Todos os direitos reservados. Assistência Técnica e Infraestrutura Especializada.</p></div></footer></body></html>
